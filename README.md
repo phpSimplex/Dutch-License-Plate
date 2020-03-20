@@ -4,7 +4,6 @@ Formats Dutch Car License Plate
 ```php
 <?php
 function formatLicensePlate(string $license = '64GZB8'): string
-function formatLicensePlate(string $license = '64GZB8'): string
 {
 	if (preg_match('/^([A-Z]*)([\d]*)([A-Z]*)([\d]*)/i', $license, $matches) === false) {
 		return $license;
